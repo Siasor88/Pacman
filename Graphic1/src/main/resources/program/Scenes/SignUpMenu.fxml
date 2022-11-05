@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.view.graphic.WelcomeController">
+   <children>
+      <PasswordField fx:id="passwordField" layoutX="220.0" layoutY="256.0" promptText="password" />
+      <Label layoutX="220.0" layoutY="238.0" prefHeight="17.0" prefWidth="160.0" text="Enter Your Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="146.0" prefHeight="17.0" prefWidth="160.0" text="Enter Your Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordAgainField" layoutX="220.0" layoutY="299.0" promptText="password" />
+      <Label layoutX="220.0" layoutY="282.0" prefHeight="17.0" prefWidth="160.0" text="Enter Your Password Again" />
+      <TextField fx:id="nicknameField" layoutX="219.0" layoutY="212.0" promptText="nickname" />
+      <MenuBar layoutX="7.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToLoginMenu" text="back" />
+              <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="324.0" layoutY="331.0" mnemonicParsing="false" onAction="#signUp" text="submit" textAlignment="CENTER" />
+      <TextField fx:id="usernameField" layoutX="219.0" layoutY="164.0" promptText="username" />
+      <Label layoutX="220.0" layoutY="192.0" prefHeight="17.0" prefWidth="160.0" text="Enter Your Nickname" />
+   </children>
+</AnchorPane>
